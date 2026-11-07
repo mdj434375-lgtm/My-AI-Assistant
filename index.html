@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My AI Assistant</title>
+
+<style>
+body {
+    background: #101827;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #38bdf8;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#output {
+    margin-top: 20px;
+    color: #4ade80;
+}
+</style>
+</head>
+
+<body>
+
+<h1>My AI Assistant</h1>
+
+<p>স্বাগতম! আমি তোমার AI Assistant.</p>
+
+<button onclick="testConsole()">
+Test Console
+</button>
+
+<div id="output"></div>
+
+<script>
+function testConsole() {
+    console.log("AI Assistant is working!");
+    document.getElementById("output").innerText =
+    "Console কাজ করছে!";
+}
+</script>
+
+<!-- Eruda Console -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+eruda.init();
+console.log("Eruda Started Successfully!");
+</script>
+
+</body>
+</html>
